@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <form class="container">
+        <div class="sub-entry">
+            <div id="contactdetails">
+                <h1>1. Your contact details</h1>
+                <input type="text" placeholder="Full Name">
+                <input type="number" placeholder="Patiend Id if exists">
+                <input type="number" placeholder="Contact Number" min="0" max="9999999999">
+                <input type="email" placeholder="Email Id">
+            </div>
+            <div id="address">
+                <h1>2. Address</h1>
+                <input type="text" placeholder="H-No">
+                <input type="text" placeholder="Street">
+                <input type="text" placeholder="Area"><br>
+                <label for="disctrict">District</label>
+                <select name="district" id="district">
+                    <option value="">----</option>
+                    <option value="north">North</option>
+                    <option value="east">East</option>
+                    <option value="west">West</option>
+                    <option value="south">South</option>
+                </select>
+            </div>
+            <div id="testtype">
+                <h1>3. Test Type</h1>
+                <label for="testtpe">Choose test type </label>
+                <select name="testtype" id="testtype">
+                    <option value="">----</option>
+                    <option value="cbc">CBC</option>
+                    <option value="cu">Complete Urine</option>
+                    <option value="lp">Lipid Profile</option>
+                    <option value="tsh">Thyroid Stimulating Hormone(TSH)</option>
+                    <option value="gt">Glucose Test</option>
+                </select>
+            </div>
+            <div id="extras">
+                <h2>4. Finalize</h2>
+                <div>
+                    <p>Do you want a hard copy of the report also?</p>
+                    <input type="radio" id="yesreport" name="reportneeded" value="yes">
+                    <label for="reportneeded">Yes</label>
+                    <input type="radio" id="noreport" name="reportneeded" value="no" checked="checked">
+                    <label for="reportneeded">No</label>
+                </div>
+                <div>
+                    <p>Select your comfortable date and time</p>
+                    <input type="datetime-local">
+                </div>
+                <input type="button" value="Submit">
+                <input type="button" value="Reset">
+            </div>
+        </div>
+        <div class="sub-entry">
+            <img src="assets/lab-test/lab-test.jpg" alt="Lab Test">
+        </div>
+    </form>
+</body>
+
+</html>
